@@ -14,17 +14,39 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <style type="text/css">
         body {
-        	background: #c0c0c0;
+        	background: #e0e0e0;
         	font-family: 'Roboto', sans-serif;
         	font-size: 20;
+        	margin: 0px;
+        }
+        #topbar {
+        	padding: 10px 10px 10px 10px;
+        	margin: 0 0 0 0;
+        	background-color: #606060;
+        }
+        #topbar>h1 {
+        	margin: 0;
+        	color: #ffffff;
+        }
+        #main {
+        	margin: 10 10 10 10;
+        }
+        #main>h2 {
+        	color: #0c1e66;
         }
     </style>
     <title>Introduction to Doktrina</title>
 </head>
 <body>
+<div id="topbar">
 <h1>Doktrina</h1>
+</div>
+<div id="main">
+<h2>Uvod</h2>
 
 <p>V resnici "doktrina" ni nič zares novega. Takorekoč vsi opisani koncepti že obstajajo in se na široko uporabljajo, vendar v zelo različnih kontekstih, nepovezano in na različne načine. V samem bistvu gre za odpravo ovir in vzpostavitev določenih abstrakcij, ki nam bi omogočile delo v bolj homogenem in ortogonalnem virtualnem svetu. S tem želimo vzpostaviti trajnostno naravnan ekosistem, v katerem so člani skupnosti motivirani, da probleme rešujejo skupaj, enkrat in za vselej, namesto da vsakič znova izumljajo vsak svoje kolo. Povedano drugače, glavni cilj je enostavnost, čista arhitektura, preglednost, ter sposobnost opisa programa na človeku prijazen način.</p>
+
+<h2>Simboli</h2>
 
 <p>Sporazumevanje med človekom in strojem v doktrini poteka preko simbolov. Za človeka simbol predstavlja nek natančno določen pojem - praviloma ga določi tisti, ki simbol ustvari - in ima vlogo stičišča med svetovi. Z vidika stroja simbol služi zgolj za ugotavljanje istovetnosti (identitete). Lokacija simbolov je abstrahirana, tako da se razvijalcu s tem ni treba ukvarjati, razen da na nek način nedvoumno opiše, kateri simbol ima v mislih (npr. ga izbere iz kataloga na spletni strani, poskenira QR kodo ipd.). Podobno kot npr. pri URL-jih je v ozadju nek mehanizem, ki zna iz oznake locirati definicijo in vsebino simbola preko enega ali večih protokolov za razreševanje (dereferencing). Ker so simboli enolični, nikoli ne pride do trčenja imen, verzij ipd. Tehnično gledano je simbol posplošitev naslova (GUID, pointer, URI, IP...) in ima to lastnost, da ga mu je mogoče dodati predpono in ga bijektivno preslikati v neko zaporedje bitov.</p>
 
@@ -90,5 +112,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <!-- Disqus end -->
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
 </body>
 </html>
